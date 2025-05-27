@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_POS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_POS"
+        mc:Ignorable="d"
+        Title="POS_APP" Height="500" Width="800">
+    <Grid x:Name="POS_APP">
+        <Button x:Name="add_prod_button" Content="Adaugare Produse" HorizontalAlignment="Left" Margin="81,54,0,0" VerticalAlignment="Top" Height="30" Width="103" Click="add_prod_button_Click"/>
+        <Button x:Name="add_serviciu_btn" Content="Adaugare Servicii" HorizontalAlignment="Left" Margin="81,89,0,0" VerticalAlignment="Top" Height="30" Width="103" Click="add_serviciu_btn_Click"/>
+        <Button x:Name="add_pachete" Content="Adaugare Pachete" HorizontalAlignment="Left" Margin="81,124,0,0" VerticalAlignment="Top" Height="30" Width="103" Click="add_pachete_Click"/>
+        <Button x:Name="read_file_elem" Content="Citire elemente fisier" HorizontalAlignment="Left" Margin="81,159,0,0" VerticalAlignment="Top" Height="30" Width="132" Click="read_file_elem_Click"/>
+        <Button x:Name="afisare_prd_serv" Content="Afisare produse si servicii" HorizontalAlignment="Left" Margin="81,194,0,0" VerticalAlignment="Top" Height="30" Width="156" Click="afisare_prd_serv_Click"/>
+        <Button x:Name="afisare_pachete" Content="Afisare pachete" HorizontalAlignment="Left" Margin="81,229,0,0" VerticalAlignment="Top" Height="30" Width="103" Click="afisare_pachete_Click"/>
+        <Button x:Name="afisare_dupa_criterii" Content="Afisare elemente dupa criterii" HorizontalAlignment="Left" Margin="81,264,0,0" VerticalAlignment="Top" Height="30" Width="176" Click="afisare_dupa_criterii_Click"/>
+        <Button x:Name="serializare_XML" Content="Serializare XML" HorizontalAlignment="Left" Margin="81,299,0,0" Width="103" Click="serializare_XML_Click" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="deserializare_XML" Content="Deserializare XML" HorizontalAlignment="Left" Margin="201,299,0,0" Width="112" Click="deserializare_XML_Click" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="serializare_JSON" Content="Serializare JSON" Margin="81,334,0,0" Click="serializare_JSON_Click" HorizontalAlignment="Left" Width="103" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="deserializare_JSON" Content="Deserializare JSON" HorizontalAlignment="Left" Margin="201,334,0,0" Width="112" Click="deserializare_JSON_Click" Height="30" VerticalAlignment="Top"/>
+        <Label Content="Optiuni de gestionare a elementelor" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="text_box" HorizontalAlignment="Left" Margin="369,69,0,0" TextWrapping="Wrap" Text="Ecran de vizualizare" VerticalAlignment="Top" Width="359" Height="314" TextChanged="text_box_TextChanged"/>
+
+    </Grid>
+</Window>

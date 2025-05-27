@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF_POS.InputProduse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_POS"
+        mc:Ignorable="d"
+        Title="InputElemente" Height="450" Width="800">
+    <Grid>
+        <Label Content="Introdu Produse" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Nume" HorizontalAlignment="Left" Margin="80,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_nume_prod" HorizontalAlignment="Left" Margin="80,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CodIntern" HorizontalAlignment="Left" Margin="229,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_codIntern_prod" HorizontalAlignment="Left" Margin="229,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pret" HorizontalAlignment="Left" Margin="80,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_pret_prod" HorizontalAlignment="Left" Margin="80,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Categorie" HorizontalAlignment="Left" Margin="229,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_categorie_prod" HorizontalAlignment="Left" Margin="229,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Producator" HorizontalAlignment="Left" Margin="80,186,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_producator_prod" HorizontalAlignment="Left" Margin="80,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="but_trimite" Content="Trimite" HorizontalAlignment="Left" Margin="509,327,0,0" VerticalAlignment="Top" Height="41" Width="122" Click="but_trimite_Click"/>
+
+    </Grid>
+</Window>
